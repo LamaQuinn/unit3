@@ -20,7 +20,7 @@ const DetailScreen = () => {
   return (
    
     <section>
-       <ImageBanner image={recipe.image_url} title={recipe.recipe_name}/>
+        <ImageBanner image={recipe.image_url} title={recipe.recipe_name} />
        <div className={styles.instructions}>
         <div className={styles.ingredients}>
           <h4>Recipe</h4>

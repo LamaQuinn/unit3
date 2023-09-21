@@ -2,7 +2,6 @@ import React from 'react'
 import styles from "./DetailScreen.module.css"
 
 function ImageBanner({image,title}) {
-    const backgroundString = `--background: url(${image})`
   return (
     <div div className={styles.image_banner}
     style={{

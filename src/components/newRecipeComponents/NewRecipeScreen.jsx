@@ -32,22 +32,20 @@ const NewRecipeScreen = () => {
 const onSubmit = (values) => {
   values.ingredients=ingredients
   console.log(values)
-  
-}
-
-useEffect((values)=>{
   axios.post(`${url}/recipes`,values)
   .then((res) => {
           console.log(res.data);
         })
-},[])
+  
+}
+
 
 const getIng=ingredients.map((ing)=>{
   return(
     <li>
     {ing.quantity} 
-  
-  <li>{ing.name}</li>
+
+    <br /> <li>{ing.name}</li>
   </li>
   )
 })
@@ -58,8 +56,6 @@ const getIng=ingredients.map((ing)=>{
       {/* Here you will have a large form. Be prepared, part 4 will have you build this form in detail, and part 5 will have you style it. Do your best! */}
       <Formik initialValues={initialValues} onSubmit={onSubmit}>
         {({values,handleChange,handleSubmit})=>(
-
-       
       <form onSubmit={handleSubmit}>
         <div className={styles.inputs}>
         <input placeholder="Name" name="recipeName" value={values.recipeName} onChange={handleChange}/>
@@ -93,7 +89,7 @@ const getIng=ingredients.map((ing)=>{
        </div>
        <button className={styles.add_btn} type="button" onClick={addIngredient}>Add Another</button>
        <textarea placeholder="What are the instructions?" rows={4} name="instructions" value={values.instructions} onChange={handleChange}></textarea>
-       <button className={styles.save_btn} style={{ backgroundColor:'rgb(70, 120, 120)' , borderRadius: '0' ,fontSize:"20px",color:"white",border: 'none' }}>Save</button>
+       <button className={styles.save_btn}type="submit" style={{ backgroundColor:'rgb(70, 120, 120)' , borderRadius: '0' ,fontSize:"20px",color:"white",border: 'none' }}>Save</button>
       </form>
        )}
       </Formik>
