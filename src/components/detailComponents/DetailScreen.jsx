@@ -32,7 +32,7 @@ const DetailScreen = () => {
           <h4>Ingredients</h4>
           <br/>
           {recipe.ingredients && recipe.ingredients.map((ingredients,index)=>
-          {return <h3>{ingredients.quantity}{ingredients.ingredient}</h3>
+          {return <h3 >{ingredients.quantity}-{ingredients.ingredient}</h3>
            })}
         </div>
         <div className={styles.detailed_instructions}>

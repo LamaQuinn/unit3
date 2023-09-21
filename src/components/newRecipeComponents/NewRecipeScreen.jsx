@@ -42,10 +42,9 @@ const onSubmit = (values) => {
 
 const getIng=ingredients.map((ing)=>{
   return(
-    <li>
+    <li style={{ marginBottom: '10px' }}>
     {ing.quantity} 
-
-    <br /> <li>{ing.name}</li>
+ <li>{ing.name}</li>
   </li>
   )
 })

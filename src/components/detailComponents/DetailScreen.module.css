@@ -35,6 +35,8 @@
     box-sizing: border-box;
     border-radius: 3px;
     box-shadow: 0px 3px 10px rgba(0,0,0,0.6);
+    margin-right: 10px;
+    
    
 }
 .detailed_instructions{
