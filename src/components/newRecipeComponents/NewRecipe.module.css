@@ -1,7 +1,9 @@
+
 section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 15px;
 }
 form{
     display: flex;
@@ -34,4 +36,38 @@ span{
     gap:4px;
     
     
+}
+form input[type=radio] {
+    height: 35px;
+    width: 20px;
+    border: 3px;
+  }
+#inputs_container input{
+    width: 164px;
+}
+.ingredient_inputs input{
+    width: 194px;
+}
+.ingredient_inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 284px;
+
+}
+.add_btn{
+    background-color: rgb(207, 99, 40);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border-radius: 5px;
+    gap: 10px;
+    font-size: 20px;
+}
+textarea{
+    width: 100%;
+    height: 80px;
+    font-size: 20px;
 }

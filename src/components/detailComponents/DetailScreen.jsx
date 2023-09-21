@@ -38,7 +38,7 @@ const DetailScreen = () => {
         <div className={styles.detailed_instructions}>
           <h4>Instructions</h4>
           <p style={{ whiteSpace: "pre-wrap" }}>
-          {recipe.instructions && JSON.parse(recipe.instructions)}
+          {recipe.instructions}
           </p>
         </div>
        </div>
